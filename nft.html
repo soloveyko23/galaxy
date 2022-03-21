@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Nft</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+        <div class="preloader">
+			<div class="preloader__logo">
+				<img src="img/logo.svg" alt="logo">
+			</div>
+			<div class="preloader__item">
+			  <img src="img/preloader/prerol.webp" alt="preloader">
+			</div>
+		</div>
+		<div class="wrapper">
+			<header class="header wow animate__animated animate__fadeInDown">
+	<div class="header__container _container">
+		<div class="header__content">
+			<div class="header__logo">
+				<a href="/">
+					<img src="img/logo.svg" alt="Логотип">
+				</a>
+			</div>
+			<div class="header__right">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Game</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Marketplace</a></li>
+							<li class="menu__item"><a href="hero.html" class="menu__link">My Heroes</a></li>
+							<li class="menu__item"><a href="farming.html" class="menu__link">Farms</a></li>
+							<li class="menu__item"><a href="buy.html" class="menu__link">Buy Hero</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__purse purse border-grenn--small">
+					<div class="purse__wrap">
+						<div class="purse__coins">
+							0
+							<img src="img/header/coin.png" alt="coin">
+						</div>
+						<button class="purse__btn" data-clipboard-text="r32rrhf...fewuh4353">
+							r32rrhf...fewuh4353
+						</button>
+					</div>
+				
+				</div>
+				<button class="btn header__btn">connect wallet</button>
+			</div>
+		</div>
+		
+	</div>
+</header>
+			<main class="page">
+				<section class="inner inner-nft">
+					<div class="inner__bg _ibg">
+						<img src="img/inner/inner-main.png" alt="inner-bg">
+					</div>
+					<div class="inner__container _container">
+						<div class="inner__content">
+							<div class="inner__block border-grenn--big wow animate__animated animate__fadeInUp">
+								<div class="inner__info">
+                                    <div class="inner__line line-top">
+                                        <div class="inner__date">
+                                            <span><img src="img/card-item/item-bg/common/time.svg" alt="time">09.11.21 </span>
+                                        </div>
+                                        <div class="inner__rare">
+                                            <span><img src="img/rarity-icons/common.svg" alt="type">Common </span>
+                                        </div>
+                                    </div>
+                                    <div class="inner__line">
+                                        <h1 class="inner__title">
+                                            ZAAG BONE CRUSHER
+                                        </h1>
+                                        <div class="inner__desc inner-text">
+                                            A warlike brute from the planet ORKanium. Convicted of riots during the ORKball matches. Hates tech. Hates organics. Hates stones. In fact ... Zaag hates everything. Except for mom. He loves mom.
+                                        </div>
+                                    </div>
+                                    <div class="inner__line line-info">
+                                        <div class="info-center__col info-center__damage">
+                                            <img src="img/card-item/item-bg/info-icon/damage2.svg" alt="damage2"> 4380
+                                        </div>
+                                        <div class="info-center__col info-center__crit">
+                                            7 600 <img src="img/card-item/item-bg/info-icon/crit2.svg" alt="crit2">
+                                        </div>
+                                        <div class="info-center__col info-center__hp">
+                                            <img src="img/card-item/item-bg/info-icon/health2.svg" alt="health2"> 2350
+                                        </div>
+                                        <div class="info-center__col info-center__speed">
+                                            5 560 <img src="img/card-item/item-bg/info-icon/speed2.svg" alt="speed2">
+                                        </div>
+                                    </div>
+                                    <div class="inner__line">
+                                        <div class="inner__price">
+                                            Price: 2000 GoC 
+                                        </div>
+                                        <div class="inner__owner inner-text">
+                                            Owner: <button data-clipboard-text="r32rrhf...fewuh4353">0xa4E67B77...18C4</button>
+                                            
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="inner__line">
+                                        <div class="inner__btn">
+                                            <button type="submit" class="btn">buy</button>
+                                        </div>
+                                    </div>
+								</div>
+                                <div class="inner__image">
+                                    <img src="img/nft/02.png" alt="01">
+                                </div>
+							</div>
+                            
+
+						</div>
+					</div>
+				</section>
+				<!-- /.inner -->
+				<div class="main-block">
+                    <section class="price">
+                        <div class="price__container _container">
+                            <h1 class="price__title title wow animate__animated animate__fadeInLeft">price chart</h1>
+                            <div class="price__content">
+                                <div class="price__chart border-grenn--small wow animate__animated animate__slideInRight">
+                                    <canvas id="chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /.price -->
+                    <section class="offers">
+                        <div class="offers__container _container">
+                            <h1 class="offers__title title wow animate__animated animate__fadeInLeft">ACTIVE OFFERS</h1>
+                            <div class="offers__content wow animate__animated animate__slideInRight">
+                                <p>No Offer Yet
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /.offers -->
+                    <section class="history">
+                        <div class="history__container _container">
+                            <h1 class="history__title title wow animate__animated animate__fadeInLeft">TRANSACTION HISTORY</h1>
+                            <div class="history__content">
+                                <div class="history__body border-grenn--small wow animate__animated animate__slideInRight ">
+                                    <table id="customers">
+                                        <tbody class="tbody">
+                                            <tr>
+                                                <th>Event	</th>
+                                                <th>From	</th>
+                                                <th>To	</th>
+                                                <th>Price	</th>
+                                                <th>Time</th>
+                                              </tr>
+                                              <tr class="row">
+                                                <td>List</td>
+                                                <td>
+                                                    <button class="btn-purse" data-clipboard-text="test1233421312">test1233421312</button>	
+                                                  </td>
+                                                  <td>
+                                                    <button class="btn-purse" data-clipboard-text="1234324234234">1234324234234</button>	
+                                                  </td>
+                                                <td>2000 GoC </td>
+                                                <td>12.04.21 15:46</td>
+                                              </tr>
+                                              <tr class="row">
+                                                  <td>List</td>
+                                                  <td>
+                                                      <button class="btn-purse" data-clipboard-text="0xa4E67B77...18C4">0xa4E67B77...18C4</button>	
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn-purse" data-clipboard-text="0xa4E67B77...18C42323232332">0xa4E67B77...18C42323232332</button>	
+                                                      </td>
+                                                  <td>2000 GoC </td>
+                                                  <td>12.04.21 15:46</td>
+                                                </tr>
+                                        </tbody>
+                                       
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="other">
+                        <div class="other__container _container">
+                            <h1 class="other__title title">Other hero</h1>
+                            <div class="other__content">
+                                <div class="cards__content">
+                                    <div class="cards__list">
+                                        <div class="cards__list-wrapper other-list">
+                                            <div class="card-item common wow animate__animated animate__fadeInUp">
+                                                <div class="card-item__body">
+                                                    <div class="card-item__info">
+                                                        <div class="card-item__nft">
+                                                            <img src="img/card-item/01.png" alt="01">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-item__text">
+                                                        <div class="card-item__top border-card_info">
+                                                            Butchyonnaise
+                                                        </div>
+                                                        <div class="card-item__center info-center">
+                                                            <div class="info-center__line info-center__damage">
+                                                                <img src="img/card-item/item-bg/info-icon/damage2.svg" alt="damage2"> 4380
+                                                            </div>
+                                                            <div class="info-center__line info-center__crit">
+                                                                7 600 <img src="img/card-item/item-bg/info-icon/crit2.svg" alt="crit2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__hp">
+                                                                <img src="img/card-item/item-bg/info-icon/health2.svg" alt="health2"> 2350
+                                                            </div>
+                                                            <div class="info-center__line info-center__speed">
+                                                                5 560 <img src="img/card-item/item-bg/info-icon/speed2.svg" alt="speed2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__price">
+                                                                Price: 2000 GoC 
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-item__bottom border-card_info">
+                                                            <img src="img/card-item/item-bg/common/time.svg" alt="time">
+                                                            <span>09.11.21 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-item uncommon wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                                <div class="card-item__body">
+                                                    <div class="card-item__info">
+                                                        <div class="card-item__nft">
+                                                            <img src="img/card-item/02.png" alt="01">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-item__text">
+                                                        <div class="card-item__top border-card_info">
+                                                            Butchyonnaise
+                                                        </div>
+                                                        <div class="card-item__center info-center">
+                                                            <div class="info-center__line info-center__damage">
+                                                                <img src="img/card-item/item-bg/info-icon/damage2.svg" alt="damage2"> 4380
+                                                            </div>
+                                                            <div class="info-center__line info-center__crit">
+                                                                7 600 <img src="img/card-item/item-bg/info-icon/crit2.svg" alt="crit2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__hp">
+                                                                <img src="img/card-item/item-bg/info-icon/health2.svg" alt="health2"> 2350
+                                                            </div>
+                                                            <div class="info-center__line info-center__speed">
+                                                                5 560 <img src="img/card-item/item-bg/info-icon/speed2.svg" alt="speed2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__price">
+                                                                Price: 2000 GoC 
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-item__bottom border-card_info">
+                                                            <img src="img/card-item/item-bg/uncommon/time.svg" alt="time">
+                                                            <span>09.11.21 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-item mythical wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                                <div class="card-item__body">
+                                                    <div class="card-item__info">
+                                                        <div class="card-item__nft">
+                                                            <img src="img/card-item/04.png" alt="04">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-item__text">
+                                                        <div class="card-item__top border-card_info">
+                                                            Butchyonnaise
+                                                        </div>
+                                                        <div class="card-item__center info-center">
+                                                            <div class="info-center__line info-center__damage">
+                                                                <img src="img/card-item/item-bg/info-icon/damage2.svg" alt="damage2"> 4380
+                                                            </div>
+                                                            <div class="info-center__line info-center__crit">
+                                                                7 600 <img src="img/card-item/item-bg/info-icon/crit2.svg" alt="crit2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__hp">
+                                                                <img src="img/card-item/item-bg/info-icon/health2.svg" alt="health2"> 2350
+                                                            </div>
+                                                            <div class="info-center__line info-center__speed">
+                                                                5 560 <img src="img/card-item/item-bg/info-icon/speed2.svg" alt="speed2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__price">
+                                                                Price: 2000 GoC 
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-item__bottom border-card_info">
+                                                            <img src="img/card-item/item-bg/mythical/time.svg" alt="time">
+                                                            <span>09.11.21 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-item leg wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                                                <div class="card-item__body">
+                                                    <div class="card-item__info">
+                                                        <div class="card-item__nft">
+                                                            <img src="img/card-item/04.png" alt="04">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-item__text">
+                                                        <div class="card-item__top border-card_info">
+                                                            Butchyonnaise
+                                                        </div>
+                                                        <div class="card-item__center info-center">
+                                                            <div class="info-center__line info-center__damage">
+                                                                <img src="img/card-item/item-bg/info-icon/damage2.svg" alt="damage2"> 4380
+                                                            </div>
+                                                            <div class="info-center__line info-center__crit">
+                                                                7 600 <img src="img/card-item/item-bg/info-icon/crit2.svg" alt="crit2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__hp">
+                                                                <img src="img/card-item/item-bg/info-icon/health2.svg" alt="health2"> 2350
+                                                            </div>
+                                                            <div class="info-center__line info-center__speed">
+                                                                5 560 <img src="img/card-item/item-bg/info-icon/speed2.svg" alt="speed2">
+                                                            </div>
+                                                            <div class="info-center__line info-center__price">
+                                                                Price: 2000 GoC 
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-item__bottom border-card_info">
+                                                            <img src="img/card-item/item-bg/leg/time.svg " alt="time">
+                                                            <span>09.11.21 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /.other -->
+				</div>
+				
+			</main>
+			<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__content">
+			<div class="footer__socials socials">
+				<ul>
+					<li>
+						<a href="#" class="socials-link">
+							<img src="img/socials/001-telegram.svg" alt="01">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="socials-link">
+							<img src="img/socials/002-github.svg" alt="02">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="socials-link">
+							<img src="img/socials/003-twitter.svg" alt="03">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="socials-link">
+							<img src="img/socials/004-facebook.svg" alt="04">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="socials-link">
+							<img src="img/socials/005-madium.svg" alt="05">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="socials-link">
+							<img src="img/socials/006-yt.svg" alt="06">
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="footer__copyright">
+				Copyright © 2021
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_manage">
+	<div class="popup__content">
+		<div class="popup__body border-grenn--small">
+			<div class="popup__close">
+				
+			</div>
+			<div class="popup__stake popup-stake">
+				<div class="popup-stake__body">
+					<h2 class="popup-stake__title popup-title">
+						Stake
+					</h2>
+					<div class="popup-stake__amount">
+						<span>GoC Amount</span>
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="22" class="input _digital">
+						<button  class="amount-btn">Max</button>
+					</div>
+					<div class="popup-stake__balance">
+						Balance: N/A GoC
+					</div>
+					<div class="popup-line">
+
+					</div>
+					<div class="popup-stake__lock">
+						Lock in
+					</div>
+					<div class="popup-stake__more">
+						20% <br>
+						Please Approve to Stake
+					</div>
+					<div class="popup-stake__btn">
+						<button type="submit" class="btn">Approve</button>
+					</div>
+				</div>
+			</div>
+			<div class="popup__unstake">
+				<div class="popup-unstake__body">
+					<h2 class="popup-unstake__title popup-title">
+						Unstake
+					</h2>
+					<div class="popup-unstake__amount">
+						<span>Staking Amount: N/A GoC</span>
+						<span>Reward: N/A GoC</span>
+					</div>
+					<div class="popup-line">
+
+					</div>
+					<div class="popup-unstake__lock">
+						Unlock in
+					</div>
+					<div class="popup-unstake__btn">
+						<button type="submit" class="btn-empty">Unstake</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c224532731.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+</html>
